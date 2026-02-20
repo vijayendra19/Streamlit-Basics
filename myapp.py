@@ -15,7 +15,6 @@ st.line_chart(df)
 st.bar_chart(df)
 
 st.sidebar.header("Sidebar")
-st.image("Kailash.jpeg", caption="Kailash") 
 
 upload_file = st.file_uploader("Upload a file", type="csv")
 if upload_file:
@@ -50,4 +49,5 @@ with st.form("login_form"):
     password=st.text_input("Password", type="password")
     submitted=st.form_submit_button("Login")
     if submitted:
+
         st.success(f"Welcome {username}!")
